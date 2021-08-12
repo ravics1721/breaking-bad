@@ -4,7 +4,7 @@ import BreakingBadImg from "../../assets/breakingbad.png";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
-    height: 200,
+    height: 250,
     background: green[900],
     backgroundImage: `url(${BreakingBadImg})`,
     backgroundRepeat: "no-repeat",
@@ -14,6 +14,6 @@ export const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "flex-end",
     alignItems: "center",
-    padding: theme.spacing(1),
+    padding: theme.spacing(0, 0, 2),
   },
 }));

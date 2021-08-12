@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "./components/homes";
+import Home from "./components/home";
 import Nf404 from "./components/404";
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/*' exact component={Nf404} />
+        <Route path='/:*' exact component={Nf404} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,15 +1,18 @@
 import Axios from "axios";
 const BASE_URL = "https://www.breakingbadapi.com/api";
-Axios.request({
+const axios = Axios.create({
   baseURL: BASE_URL,
 });
 
 const API = {
   getAllCharacters: async () => {
-    return await Axios.get("/characters");
+    return await axios.get("/characters");
   },
   getCharactersById: async (payload) => {
-    return await Axios.get("/characters");
+    return await axios.get("/characters");
+  },
+  getCharactersByPage: async (payload) => {
+    return await axios.get(`/characters/?limit=10&offset=${payload.pageNo}`);
   },
 };
 
