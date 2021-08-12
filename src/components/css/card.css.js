@@ -46,21 +46,20 @@ export const useStyles = makeStyles((theme) => {
       fontSize: 20,
       margin: theme.spacing(0, 1),
       fontFamily: `"Zen Dots", cursive`,
-      display: "none",
+      textAlign: "center",
     },
     info: {
       fontWeight: 400,
       fontSize: 17,
       margin: theme.spacing(0, 1, 1),
       fontFamily: `"DM Mono", monospace`,
-      display: "none",
     },
     nickName: {
       fontWeight: 400,
       fontSize: 17,
       margin: theme.spacing(0, 1, 1),
       fontFamily: `"DM Mono", monospace`,
-      display: "none",
+      textAlign: "center",
     },
     span: {
       color: green[600],
