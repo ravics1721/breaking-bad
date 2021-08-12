@@ -1,5 +1,5 @@
 /* eslint-disable eqeqeq */
-import React, { useEffect } from "react";
+import React from "react";
 import { useStyles } from "./css/pagination.css";
 import { green, common, grey } from "@material-ui/core/colors";
 import { Link } from "react-router-dom";

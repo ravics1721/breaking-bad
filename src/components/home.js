@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Card from "./card";
+import Card from "./cards";
 import Header from "./header";
 import { useStyles } from "./css/home.css";
 import { API, filterCharacterByName } from "../utilities";
