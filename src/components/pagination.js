@@ -16,18 +16,16 @@ const Pagination = ({ pageLength = 7, onClick, pageNo }) => {
       <div className={styles.row}>
         {pages.map((no, index) => {
           return (
-            <Link to={`?page=${no}`} className={styles.link}>
-              <div
-                onClick={() => onClick(index)}
-                className={styles.button}
-                style={{
-                  background: pageNo / 10 === index ? green[800] : grey[300],
-                  color: pageNo / 10 === index ? common.white : common.black,
-                }}
-              >
-                {no}
-              </div>
-            </Link>
+            <div
+              onClick={() => onClick(index)}
+              className={styles.button}
+              style={{
+                background: pageNo / 10 === index ? green[800] : grey[300],
+                color: pageNo / 10 === index ? common.white : common.black,
+              }}
+            >
+              {no}
+            </div>
           );
         })}
       </div>

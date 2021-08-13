@@ -9,10 +9,13 @@ const API = {
     return await axios.get("/characters");
   },
   getCharactersById: async (payload) => {
-    return await axios.get("/characters");
+    return await axios.get(`/characters/${payload.id}`);
   },
   getCharactersByPage: async (payload) => {
     return await axios.get(`/characters/?limit=10&offset=${payload.pageNo}`);
+  },
+  getAllQuotesByAuthor: async (payload) => {
+    return await axios.get(`/quote?author=${payload.author}`);
   },
 };
 
