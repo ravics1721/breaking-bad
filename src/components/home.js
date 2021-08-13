@@ -13,7 +13,7 @@ const Home = () => {
     text: "",
     data: [],
     error: "",
-    pageNo: 1,
+    pageNo: 0,
   });
   useEffect(() => {
     API.getCharactersByPage({
