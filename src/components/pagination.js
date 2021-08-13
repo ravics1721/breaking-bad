@@ -2,7 +2,6 @@
 import React from "react";
 import { useStyles } from "./css/pagination.css";
 import { green, common, grey } from "@material-ui/core/colors";
-import { Link } from "react-router-dom";
 
 const Pagination = ({ pageLength = 7, onClick, pageNo }) => {
   const styles = useStyles();
